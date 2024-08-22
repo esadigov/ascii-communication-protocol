@@ -4,7 +4,7 @@
 #include "serial_com.h"
 
 int main() {
-  serial_com_t cmd = {.cmd = GT, .payload1 = "1234", .payload2 = "5678"};
+  serial_com_t cmd = {.cmd = COMMAND1, .payload1 = "1234", .payload2 = "5678"};
 
   char buffer[CMD_BUFFER_SIZE] = {0};
 

@@ -8,7 +8,7 @@ void cmd_without_checksum(char *str);
 
 void test_create_and_parse_command() {
   serial_com_t cmd = {
-      .cmd = GR, .payload1 = "payload1", .payload2 = "payload2"};
+      .cmd = COMMAND1, .payload1 = "payload1", .payload2 = "payload2"};
 
   char buffer[CMD_BUFFER_SIZE] = {0};
 
