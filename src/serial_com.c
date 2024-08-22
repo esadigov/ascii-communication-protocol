@@ -72,7 +72,7 @@ uint8_t calculate_checksum(const char *buffer) {
 }
 
 command_t string_to_command(const char *str) {
-  for (command_t cmd = SR; cmd < NUM_COMMANDS; cmd++) {
+  for (command_t cmd = COMMAND1; cmd < NUM_COMMANDS; cmd++) {
     if (strcmp(str, COMMAND_LIST[cmd]) == 0) {
       return cmd;
     }

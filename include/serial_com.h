@@ -25,7 +25,7 @@
  * @brief List of available commands as strings.
  */
 #define COMMAND_LIST                                                           \
-  (char *[]) { "SR", "GR", "GT", "GTP", "CONFIG", "GPER", "SPER" }
+  (char *[]) { "COMMAND1", "COMMAND2" }
 
 /**
  * @brief Sizes of command components.
@@ -37,13 +37,8 @@
  * @brief Enum defining the available commands.
  */
 typedef enum {
-  SR,           /**< Command for Set Relay. */
-  GR,           /**< Command for Get Relay. */
-  GT,           /**< Command for Get Temperature. */
-  GTP,          /**< Command for Get Temperature Pool. */
-  CONFIG,       /**< Command for CONFIG. */
-  GPER,         /**< Command for Get Delay Period. */
-  SPER,         /**< Command for Set Delay Period. */
+  COMMAND1,           /**< Command 1. */
+  COMMAND2,           /**< Command 2. */
   NUM_COMMANDS, /**< Total number of commands. */
   INVALID_CMD   /**< Invalid command. */
 } command_t;
